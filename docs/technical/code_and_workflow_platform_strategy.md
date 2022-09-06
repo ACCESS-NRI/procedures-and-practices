@@ -1,4 +1,5 @@
-# Executive Summary
+# Code and Workflow Management Strategy
+## Executive Summary
 
 For code hosting the proposal is to use public GitHub repositories,
 where code licensing allows, and ZenHub for workflow management. See
@@ -39,7 +40,7 @@ Workflow management:
 | High level reporting tools     | ZenHub roadmap and release functionality |
 | On time delivery               | ZenHub includes extensive support for agile development,  planning and reporting, enabling timely delivery |
 
-# Introduction
+## Introduction
 
 ACCESS-NRI (NRI) has a requirement to develop climate, weather and
 earth-system research models for the Australian community. These models
@@ -71,7 +72,7 @@ the following approaches:
 
 -   On time release delivery
 
-## Requirements for Code Development Tools
+### Requirements for Code Development Tools
 
 Best practice software development includes using modern version control
 systems, continuous integration (CI) testing, code review and excellent
@@ -133,7 +134,7 @@ actively participate in the development of the models and software
 curated by the NRI. As such, the code development tools must be
 accessible by the whole community and easy to learn and operate.
 
-## Requirements summary
+### Requirements summary
 
 | **Category**   | **Requirements**                  |
 |----------------|-----------------------------------|
@@ -148,7 +149,7 @@ accessible by the whole community and easy to learn and operate.
 | Provenance     | Code version control              |
 | Code review    | Support for code review during update |
 
-# Proposed Strategy
+## Proposed Strategy
 
 For Git-based repositories, there are currently 3 different well-known
 platforms: Bitbucket, Gitlab and GitHub.
@@ -190,7 +191,7 @@ model component. These configuration repositories will contain all
 information and auxiliary tools needed to build and run the
 configuration.
 
-## Strategy compliance
+### Strategy compliance
 
 See Executive summary above.
 
@@ -238,7 +239,7 @@ accurately estimate and meet software delivery timelines.
 | Community          | On time delivery                  |
 |                    | Open to the community             |
 
-# Proposed Strategy
+## Proposed Strategy
 
 GitHub has a project management tool, called GitHub Projects, included
 with GitHub repositories. However, this tool is quite simple and does
@@ -268,6 +269,6 @@ ZenHub supports agile development and includes planning poker, sprint
 planning and executtion, velocity estimates for better release timeline
 planning and burndown charts for tracking spring progress.
 
-## Strategy compliance
+### Strategy compliance
 
 See Executive summary above.
