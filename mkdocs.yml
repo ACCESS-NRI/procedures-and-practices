@@ -1,8 +1,8 @@
 site_name: ACCESSHub Demo
 
 # Git repository
-repo_url: https://github.com/ACCESS-NRI-Community/ACCESSHub
-repo_name: ACCESSHub
+repo_url: https://github.com/ACCESS-NRI/Procedures-and-Practices
+repo_name: Procedures and Practices
 # Material default to a "master" branch, need to change to "main"
 edit_uri: edit/main/docs/
 
@@ -11,14 +11,14 @@ theme:
   name: material
   palette:
     - scheme: light
-      primary: teal
-      accent: deep orange
+      primary: indigo
+      accent: lime
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
-      primary: teal
-      accent: deep orange
+      primary: indigo
+      accent: lime
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
