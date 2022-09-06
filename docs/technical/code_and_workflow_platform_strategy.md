@@ -56,20 +56,15 @@ between the NRI and stakeholders. This leads to some fundamental guiding
 principles:
 
 -   Open and transparent
-
 -   Responsive to community needs
 
 Trust in the work of the NRI is essential. Trust can be engendered by
 the following approaches:
 
 -   Best practice software development
-
 -   Well tested, validated and reproducible models
-
 -   Full provenance of models and model output
-
 -   Well supported products
-
 -   On time release delivery
 
 ### Requirements for Code Development Tools
@@ -151,8 +146,8 @@ accessible by the whole community and easy to learn and operate.
 
 ## Proposed Strategy
 
-For Git-based repositories, there are currently 3 different well-known
-platforms: Bitbucket, Gitlab and GitHub.
+For git-based repositories, there are currently 3 different well-known
+platforms: [Bitbucket](https://bitbucket.org), [Gitlab](https://gitlab.org) and [GitHub](https://github.com).
 
 The proposal is to use GitHub for all open source code repositories.
 GitHub is already the platform used by all the open source model
@@ -271,4 +266,4 @@ planning and burndown charts for tracking spring progress.
 
 ### Strategy compliance
 
-See Executive summary above.
+See [Executive summary](#executive-summary) above.
