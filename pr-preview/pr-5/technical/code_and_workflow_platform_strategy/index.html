@@ -1,0 +1,1117 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.2">
+    
+    
+      
+        <title>Code and Workflow Management - Procedures and Practices</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.69437709.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="light" data-md-color-primary="indigo" data-md-color-accent="lime">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#code-and-workflow-management-strategy" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Procedures and Practices" class="md-header__button md-logo" aria-label="Procedures and Practices" data-md-component="logo">
+      
+  <img src="../../assets/ACCESSLogoJustPlanet.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Procedures and Practices
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Code and Workflow Management
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="indigo" data-md-color-accent="lime"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ACCESS-NRI/Procedures-and-Practices" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Procedures and Practices
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Welcome
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Technical
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../release/release_specification.md" class="md-tabs__link">
+        Release Management
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Procedures and Practices" class="md-nav__button md-logo" aria-label="Procedures and Practices" data-md-component="logo">
+      
+  <img src="../../assets/ACCESSLogoJustPlanet.png" alt="logo">
+
+    </a>
+    Procedures and Practices
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ACCESS-NRI/Procedures-and-Practices" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Procedures and Practices
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Technical
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Technical" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Technical
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Code and Workflow Management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Code and Workflow Management
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#executive-summary" class="md-nav__link">
+    Executive Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements-for-code-development-tools" class="md-nav__link">
+    Requirements for Code Development Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirements-summary" class="md-nav__link">
+    Requirements summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposed-strategy" class="md-nav__link">
+    Proposed Strategy
+  </a>
+  
+    <nav class="md-nav" aria-label="Proposed Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strategy-compliance" class="md-nav__link">
+    Strategy compliance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-summary_1" class="md-nav__link">
+    Requirements summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposed-strategy_1" class="md-nav__link">
+    Proposed Strategy
+  </a>
+  
+    <nav class="md-nav" aria-label="Proposed Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strategy-compliance_1" class="md-nav__link">
+    Strategy compliance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation Platform Strategy.md" class="md-nav__link">
+        Documentation Platform
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../form_and_discussion_platform.md" class="md-nav__link">
+        Forum and Discussion Platform
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reproducibility_and_performance_testing_organisation.md" class="md-nav__link">
+        Reproducibility and Performance Testing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Release Management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Release Management" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Release Management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release/release_specification.md" class="md-nav__link">
+        Release Specification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release/licensing.md" class="md-nav__link">
+        Licensing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#executive-summary" class="md-nav__link">
+    Executive Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements-for-code-development-tools" class="md-nav__link">
+    Requirements for Code Development Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirements-summary" class="md-nav__link">
+    Requirements summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposed-strategy" class="md-nav__link">
+    Proposed Strategy
+  </a>
+  
+    <nav class="md-nav" aria-label="Proposed Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strategy-compliance" class="md-nav__link">
+    Strategy compliance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-summary_1" class="md-nav__link">
+    Requirements summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposed-strategy_1" class="md-nav__link">
+    Proposed Strategy
+  </a>
+  
+    <nav class="md-nav" aria-label="Proposed Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strategy-compliance_1" class="md-nav__link">
+    Strategy compliance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/ACCESS-NRI/Procedures-and-Practices/edit/main/docs/technical/code_and_workflow_platform_strategy.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="code-and-workflow-management-strategy">Code and Workflow Management Strategy</h1>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>For code hosting the proposal is to use public GitHub repositories,
+where code licensing allows, and ZenHub for workflow management. See
+below for a summary of design criteria and comments on how these are met
+with the chosen tools.</p>
+<p>Note that the UM Atmosphere model has strict licensing conditions that
+do not allow it to be hosted on publicly available services. It also
+uses Subversion for version control. There were always going to be
+issues with integrating the UM for these reasons, so the decision was
+made to choose tools to be as open as possible and integrate as smoothly
+as possible with existing communities and deal with the UM as a special
+case.</p>
+<p>Code hosting:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Criteria</strong></th>
+<th><strong>Compliance</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Publicly accessible</td>
+<td>Public GitHub repositories (where licensing allows) are  viewable without an account</td>
+</tr>
+<tr>
+<td>Low barrier to community participation</td>
+<td>GitHub currently hosts all targeted open source model components</td>
+</tr>
+<tr>
+<td>Version control software</td>
+<td>GitHub is based around git, the industry standard distributed version control system</td>
+</tr>
+<tr>
+<td>Code review tools</td>
+<td>Github pull requests (PRs) include support for code review, optionally this can be made mandatory</td>
+</tr>
+<tr>
+<td>Community can report bugs/ask for changes</td>
+<td>GitHub Issues</td>
+</tr>
+<tr>
+<td>Community can suggest code changes</td>
+<td>GitHub pull requests support  code contributions from community</td>
+</tr>
+<tr>
+<td>Continuous integration/testing</td>
+<td>GitHub workflows are highly configurable and tightly integrated with code review and  pull requests</td>
+</tr>
+</tbody>
+</table>
+<p>Workflow management:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Criteria</strong></th>
+<th><strong>Compliance</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Visible to the community</td>
+<td>ZenHub uses GitHub permissions, so read-only access will allow viewing the workflow and current progress</td>
+</tr>
+<tr>
+<td></td>
+<td>Zenhub works directly with GitHub issues, still publicly visible</td>
+</tr>
+<tr>
+<td></td>
+<td>Open source is free, so will scale seamlessly to however many community members need access</td>
+</tr>
+<tr>
+<td>Organise work across multiple  repositories</td>
+<td>Zenhub supports multirepository workspaces across organisations</td>
+</tr>
+<tr>
+<td>Support agile workflows</td>
+<td>ZenHub is highly configurable and expressly supports agile development:  Sprints, Epics, Planning poker, Velocity estimation</td>
+</tr>
+<tr>
+<td>Project planning and tracking functionality</td>
+<td>ZenHub provides high level roadmaps, burndown charts and other tools for measuring productivity</td>
+</tr>
+<tr>
+<td></td>
+<td>ZenHub provides dedicated release support, projects and epics for work planning</td>
+</tr>
+<tr>
+<td>High level reporting tools</td>
+<td>ZenHub roadmap and release functionality</td>
+</tr>
+<tr>
+<td>On time delivery</td>
+<td>ZenHub includes extensive support for agile development,  planning and reporting, enabling timely delivery</td>
+</tr>
+</tbody>
+</table>
+<h2 id="introduction">Introduction</h2>
+<p>ACCESS-NRI (NRI) has a requirement to develop climate, weather and
+earth-system research models for the Australian community. These models
+consist of complex scientific code bases for multiple model components
+and associated documentation. Excellent software development practices
+and powerful tools are required to properly manage such a complex
+software ecosystem.</p>
+<p>Community building is a foundational requirement of the NRI and an
+important determinant in its success. Building a community requires high
+levels of trust in the outputs of the NRI, and excellent communication
+between the NRI and stakeholders. This leads to some fundamental guiding
+principles:</p>
+<ul>
+<li>Open and transparent</li>
+<li>Responsive to community needs</li>
+</ul>
+<p>Trust in the work of the NRI is essential. Trust can be engendered by
+the following approaches:</p>
+<ul>
+<li>Best practice software development</li>
+<li>Well tested, validated and reproducible models</li>
+<li>Full provenance of models and model output</li>
+<li>Well supported products</li>
+<li>On time release delivery</li>
+</ul>
+<h3 id="requirements-for-code-development-tools">Requirements for Code Development Tools</h3>
+<p>Best practice software development includes using modern version control
+systems, continuous integration (CI) testing, code review and excellent
+documentation. There is a hierarchy of testing and typically it is
+compilation > unit > run > reproducibility > performance. Code
+review is also an important element in producing robust model code that
+the community can trust.</p>
+<p>Reproducibility is essential. It provides a check on code change
+correctness. If a model cannot reproduce answers this has to be
+understood and documented. Users need to know if model changes lead to
+changes in model answers in the case where they need to reproduce
+earlier experiments.</p>
+<p>Model performance, running time, memory use etc, need to be tracked.
+Significant reductions in performance must be detected in automated
+testing, investigated and remedied if possible. Where performance
+reductions are unavoidable, they also need to be documented to enable
+users to make informed decisions about which model version they need to
+use for their work.</p>
+<p>For version control, Git is preferred to SVN as it is the industry
+standard. By choosing Git-based repositories, the developers can take
+advantage of a plethora of development tools with Git integrations that
+do not exist for SVN.</p>
+<p>Full provenance for a released experiment means, for a given data
+product being able to determine</p>
+<ul>
+<li>exact source code version</li>
+<li>build process, including versions of all supporting libraries</li>
+<li>model inputs</li>
+</ul>
+<p>Model inputs themselves require full provenance, including identifying
+the original source data and all transformations required to produce the
+files used in the model.</p>
+<p>The goal is to be able to reproducibly build the model and re-run an
+experiment and reproduce the earlier results. This means users can trust
+they can always identify how their experiment was run and reproduce the
+results when necessary.</p>
+<p>Another goal is that users can take well documented NRI experiments and
+create modified versions for examining their own scientific questions.
+In this way the NRI can improve the productivity and impact of the
+Australian research community.</p>
+<p>NRI development activities must be responsive to community needs. The
+code needs to be easily accessible to the community. Members of the
+community must be able to lodge bug reports, feature requests and report
+omissions in documentation. The process for doing so must be
+straightforward and well understood.</p>
+<p>A well-supported product must have excellent documentation and timely
+resolution of errors, omissions or bugs.</p>
+<p>The NRI is supporting community models, this means the community will
+actively participate in the development of the models and software
+curated by the NRI. As such, the code development tools must be
+accessible by the whole community and easy to learn and operate.</p>
+<h3 id="requirements-summary">Requirements summary</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Category</strong></th>
+<th><strong>Requirements</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Development</td>
+<td>Open to collaboration from the community</td>
+</tr>
+<tr>
+<td></td>
+<td>Open, transparent bug reporting</td>
+</tr>
+<tr>
+<td></td>
+<td>Low barrier to community participation</td>
+</tr>
+<tr>
+<td></td>
+<td>Git version control if possible</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>CI compilation testing</td>
+</tr>
+<tr>
+<td></td>
+<td>Run testing</td>
+</tr>
+<tr>
+<td></td>
+<td>Reproducibility testing</td>
+</tr>
+<tr>
+<td></td>
+<td>Performance testing</td>
+</tr>
+<tr>
+<td>Provenance</td>
+<td>Code version control</td>
+</tr>
+<tr>
+<td>Code review</td>
+<td>Support for code review during update</td>
+</tr>
+</tbody>
+</table>
+<h2 id="proposed-strategy">Proposed Strategy</h2>
+<p>For git-based repositories, there are currently 3 different well-known
+platforms: <a href="https://bitbucket.org">Bitbucket</a>, <a href="https://gitlab.org">Gitlab</a> and <a href="https://github.com">GitHub</a>.</p>
+<p>The proposal is to use GitHub for all open source code repositories.
+GitHub is already the platform used by all the open source model
+components the NRI intends to use in the initial tranche of releases.
+Part of the community knows how to use it and there are well designed
+online training courses available to all, which means a low barrier to
+participate. As the code is already on GitHub there is the option to use
+component code directly from the current repository. This is potentially
+easier and meshes the NRI activities tightly with those of existing
+communities. Even in the case where NRI creates a fork of an existing
+repository the original and the fork are tightly coupled and it is
+straightforward to synchronise changes between them.</p>
+<p>GitHub issue support is excellent. It is easy to use, familiar to some
+in the community, and offers many features that nicely tie issues
+together, even across repositories and organisations.</p>
+<p>Code updates are possible through pull requests, from either NRI staff,
+or directly from the community. This process is well understood by part
+of the community. Pull requests (PRs) can trigger continuous integration
+(CI) testing, which can be configured so the code cannot be merged
+without first passing CI testing. Pull requests can be connected to
+issues and automatically close an issue when the PR code is merged.
+Features like this help in streamlining code development. Code review is
+supported in PRs, and can also be configured such that code cannot be
+merged without first passing the code review.</p>
+<p>Supporting the UM in this environment is complex. The code will have to
+remain on the UKMO Subversion server. To integrate work on the UM as
+closely as possible a UM repository will be created. It will not link to
+code, but will contain issues so that work on the UM can be managed in
+the same framework as the other model components. Community members can
+also lodge their issues in this repository, removing the need to create
+a UKMO account. We will use GitHub to release configurations for the UM
+model component. These configuration repositories will contain all
+information and auxiliary tools needed to build and run the
+configuration.</p>
+<h3 id="strategy-compliance">Strategy compliance</h3>
+<p>See Executive summary above.</p>
+<p>Requirements for Workflow Management Tools</p>
+<p>ACCESS-NRI operates in a complex software environment. Typically a model
+will contain code from many separate repositories, in some cases those
+repositories may not reside in the same location. The NRI will also have
+to collaborate with existing model developers in the community. Flagship
+releases will require collaboration between most NRI teams: model
+development, model verification, training and release.</p>
+<p>All input from the community will come in the form of issues and pull
+requests in the relevant code repositories.</p>
+<p>Consequently a workflow management tool must: be configurable to deal
+with different workflow requirements, work across multiple repositories
+in multiple organisations, and link very closely to the issues in the
+code repositories.</p>
+<p>Accurate and informative reporting tools, and transparent workflow
+management allow the community to keep abreast of progress. Being open
+with development progress gives the community confidence in release
+timelines.</p>
+<p>On time release delivery will show the community that the NRI is able to
+follow through on commitments and can be a trusted partner in their
+research program. Timely release in large complex software projects has
+been proven to be a very difficult task with traditional project
+management techniques. Agile software development is best suited to
+accurately estimate and meet software delivery timelines.</p>
+<h2 id="requirements-summary_1">Requirements summary</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Category</strong></th>
+<th><strong>Requirements</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project management</td>
+<td>Flexibility for different tasks</td>
+</tr>
+<tr>
+<td></td>
+<td>Automated workflow tools</td>
+</tr>
+<tr>
+<td></td>
+<td>Support different projects, releases and epic</td>
+</tr>
+<tr>
+<td></td>
+<td>High level reporting tools, e.g. roadmaps</td>
+</tr>
+<tr>
+<td>Issues and PRs</td>
+<td>Tight integration</td>
+</tr>
+<tr>
+<td>Agile development</td>
+<td>Planning poker for timing estimates</td>
+</tr>
+<tr>
+<td></td>
+<td>Sprint planning and execution</td>
+</tr>
+<tr>
+<td></td>
+<td>Velocity estimate (burndown charts etc)</td>
+</tr>
+<tr>
+<td>Community</td>
+<td>On time delivery</td>
+</tr>
+<tr>
+<td></td>
+<td>Open to the community</td>
+</tr>
+</tbody>
+</table>
+<h2 id="proposed-strategy_1">Proposed Strategy</h2>
+<p>GitHub has a project management tool, called GitHub Projects, included
+with GitHub repositories. However, this tool is quite simple and does
+not work across more than one repository. As such, it is not suitable
+for our purpose. Gitlab and Bitbucket come also with integrated project
+management tools. These tools are very good, but they did not provide
+enough of an advantage for us to choose these platforms.</p>
+<p>The proposal strategy is to use <a href="https://www.zenhub.com">ZenHub</a> for
+code workflow management. ZenHub is built to work on top of GithHub,
+either as a standalone web application, or as a plugin to the Chrome
+browser working directly on the GitHub website. It uses GitHub issues
+directly, and seamlessly integrates them into the ZenHub workflow. The
+issues themselves are still visible on GitHub without using ZenHub.</p>
+<p>ZenHub supports creating multiple workspaces with the same repositories.
+Each workspace can be configured to give a different view of the
+repositories, and with entirely different workflow setup. ZenHub
+supports automatic workflows between workspaces. Thus ZenHub is highly
+configurable and customisable for different tasks.</p>
+<p>ZenHub supports different categories of task grouping: releases,
+projects and epics. It has high level reporting tools showing the
+progress of releases and projects.</p>
+<p>ZenHub supports agile development and includes planning poker, sprint
+planning and executtion, velocity estimates for better release timeline
+planning and burndown charts for tracking spring progress.</p>
+<h3 id="strategy-compliance_1">Strategy compliance</h3>
+<p>See <a href="#executive-summary">Executive summary</a> above.</p>
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Welcome" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Welcome
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+      
+    
+  </body>
+</html>
