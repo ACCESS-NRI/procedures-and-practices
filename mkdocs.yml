@@ -51,5 +51,5 @@ nav:
     - Forum and Discussion Platform: technical/form_and_discussion_platform.md
     - Reproducibility and Performance Testing: technical/reproducibility_and_performance_testing_organisation.md
   - Release Management: 
-    - Release Specification: release/release_specification.md
     - Licensing: release/licensing.md
+    - Release Specification: release/release_specification.md
