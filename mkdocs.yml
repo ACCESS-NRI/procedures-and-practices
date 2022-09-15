@@ -47,8 +47,8 @@ nav:
   - Welcome: index.md
   - Technical: 
     - Code and Workflow Management: technical/code_and_workflow_platform_strategy.md
-    - Documentation Platform:  technical/documentation Platform Strategy.md
-    - Forum and Discussion Platform: technical/form_and_discussion_platform.md
+    - Documentation Platform:  technical/documentation_platform_strategy.md
+    - Forum and Discussion Platform: technical/forum_and_discussion_platform.md
     - Reproducibility and Performance Testing: technical/reproducibility_and_performance_testing_organisation.md
   - Release Management: 
     - Release Specification: release/release_specification.md
