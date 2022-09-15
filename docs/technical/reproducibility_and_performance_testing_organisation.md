@@ -1,4 +1,4 @@
-Introduction
+## Introduction
 
 Official GitHub repositories need to be public for maximum visibility to
 the ACCESS Community. Reproducibility and performance testing will have
