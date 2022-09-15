@@ -1,5 +1,16 @@
-All procedure and practice policies documentation for ACCESS-NRI is contained in this repository. It is open for public inspection, and comments from the community are welcome.
+All procedure and practice policies for [ACCESS-NRI] are available on this website. 
 
-All policies are markdown documents that automatically rendered into HTML and viewable here.
+Policies are markdown documents in a [GitHub repository][repo] that are automatically rendered into HTML and viewable on the [Procedures and Practices website][procedures-and-practices]. 
 
-The site contains pages for each procedure or practice policy documentent. There are grouped into broad sections, but the entire site is searchable.
+These procedures and practices define the scope of what ACCESS-NRI does and how it does it. The policies are living documents, open to the community and feedback is welcome. Direct feedback is one avenue for the community to have a say in how the ACCESS-NRI operates. The best way to give feedback is to [open an issue][issues] on this repository.  
+
+???+ Info Creating an issue
+    See GitHub docs: [creating an issue from a repository][create-issue] 
+
+The site contains pages for each procedure or practice policy document. These are grouped into broad sections, but the entire site is searchable which should make finding relevant material relatively painless.
+
+[ACCESS-NRI]: https://access-nri.org.au
+[repo]: https://github.com/ACCESS-NRI/Procedures-and-Practices
+[procedures-and-practices]: https://access-nri.github.io/procedures-and-practices
+[issues]: https://github.com/ACCESS-NRI/procedures-and-practices/issues
+[create-issue]: https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository
