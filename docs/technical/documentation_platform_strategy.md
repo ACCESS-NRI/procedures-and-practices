@@ -1,34 +1,25 @@
 Executive Summary
 
-We are proposing to put in place a Documentation Hub powered by
-[ReadTheDocs](https://readthedocs.org) (RTD). This Hub will provide
-links to the documentation supported by the ACCESS NRI and any
-documentation the ACCESS community deems useful. It allows to group and
-clearly identify which documentation is supported by the ACCESS NRI and
-that supported by the community.
+We are proposing to put in place a Documentation Hub, [ACCESS-Hub], powered by [MkDocs]. [ACCESS-Hub] will provide links to the documentation supported by the ACCESS NRI and any documentation the ACCESS community deems useful. It will group and clearly identify which documentation is supported by the ACCESS NRI and that supported by the community.
 
-The technical documentation supported by the ACCESS NRI will also use
-[ReadTheDocs](https://readthedocs.org) as it supports versioning. Other
-documentation will make use of other tools and platforms as appropriate
-for the type of communication (e.g. Jupyter Notebooks and Books,
-YouTube, etc.).
+The technical documentation supported by the ACCESS NRI will either use [ReadTheDocs] (RTD) or [MkDocs] + [GitHub pages]. [ReadTheDocs] is preferred for automated API documentation, or strict versioning is required. [MkDocs] is preferred when the barrier to contribution needs to be as low as possible. Other documentation will make use of other tools and platforms as appropriate for the type of communication (e.g. Jupyter Notebooks and Books, YouTube, etc.).
 
-See below for a summary of how the proposed strategy complies with the
-identified requirements
+See below for a summary of how the proposed strategy complies with the identified requirements
 
 | **Criteria**                     | **Compliance**                    |
 |----------------------------------|-----------------------------------|
-| Limit the number of platforms for supported documentation (ideally 1). | RTD only (using supported Sphinx code generation tool)  |
-| Clear delineation between NRI  curated and community-led organisation | Separate community GitHub documentation |
-|                                  | Clear separation of supported and community docs on ***Documentation Hub*** |
+| Limit the number of platforms for supported documentation | MkDocs + GitHub pages and RTD |
+| Clear delineation between NRI curated and community-led organisation | Separate community GitHub documentation |
+|                                  | Clear separation of supported and community docs on [ACCESS-Hub] |
 | Documentation contained within a model code repository | Docs in model repo where possible subject to licensing |
-| Contributions from a wide range  of people: NRI staff and the community experts | Publicly visible Git code  repository allows input via issues and pull request       |
-|                                  | ***Documentation Hub*** conduit for community  contributions |
-| Support of code snippets         | Code snippets supported by document generator     |
-| Standalone documentation with  its own versioning | RTD versioning is             tempo customisable                  |
-| Support a limited range of formats for NRI supported  documentation | Sphinx very widely used.  Other systems can generate  compatible docs if required   e.g. jupyterbook |
+| Contributions from a wide range  of people: NRI staff and the community experts | Publicly visible git repository allows input via issues and pull request       |
+|                                  | [ACCESS-Hub] conduit for community  contributions |
+| Support of code snippets         | Code snippets supported by all plaforms |
+| Standalone documentation with its own versioning if required | RTD versioning is tempo customisable |
+| Support a limited range of formats for NRI supported  documentation | Sphinx very widely used.  Other systems can generate  compatible docs if required e.g. jupyterbook. Otherwise default to [Markdown] |
 | Ease of use by the community     | GitHub issues and pull requests are well known and currently used in community   |
-|                                  | ***Documentation Hub*** can  link to documentation in any  form. Documentation software  systems with lower barrier of entry can be used |
+|                                  | [Markdown] is a simple and easy to use markup language that is very widely used. e.g. GitHub |
+|                                  | [ACCESS-Hub] can  link to documentation in any  form. So documentation software systems with lower barrier of entry can be used if necessary |
 
 # Introduction
 
@@ -61,14 +52,13 @@ can be broken down into two broad groups:
 2.  **Technical documentation:** describes technical detail that is of
     interest to a narrow audience with specialist knowledge. This can be
     further subdivided into
-
-    a.  Versioned documentation that resides in the same repository as
-        model component code, and is updated in lock-step to reflect
-        changes to the code
-
-    b.  Other technical documentation that is less closely tied to
-        rapidly varying and versioned codebases, e.g. documentation
-        relating to the generation of input data such as bathymetry
+    1. Versioned documentation that resides in the same repository as
+       model component code, and is updated in lock-step to reflect
+       changes to the code
+    2. Other technical documentation that is less closely tied to
+       rapidly varying and versioned codebases, e.g. documentation
+       relating to the generation of input data such as bathymetry
+    3. More general documentation such as policies and practices 
 
 It is important that versioned technical documentation is identifiable
 by version, so that it is straightforward to find the technical
@@ -89,17 +79,11 @@ closely aligned but will likely have many fewer total versions. This
 makes it easier for users to ensure they are using the correct version
 of the documentation.
 
-It is essential that the community can easily provide feedback on the
-documentation and propose changes. Current documentation work by the NRI
-must also be clearly visible to the community.
+More general documentation does not require formal versioning.
 
-Both types of technical documentation will be the industry standard
-[ReadTheDocs](https://readthedocs.org). This means all documentation
-supported by the NRI will be hosted in public Git repositories, either
-within a model component repository or a standalone documentation
-repository. It will allow the community and the NRI to communicate on
-the state of the documentation through the same issue process as for the
-model development work.
+It is essential that the community can easily provide feedback on the documentation and propose changes. Current documentation work by the NRI must also be clearly visible to the community.
+
+Versioned technical documentation will be the industry standard [ReadTheDocs](https://readthedocs.org), otherwise [MkDocs] + [Github Pages] as this is simple and easy to use, lowering the barrier for community input. This means all documentation supported by the NRI will be hosted in public git repositories, either within a model component repository or a standalone documentation repository. It will allow the community and the NRI to communicate on the state of the documentation through the same issue process as for the model development work.
 
 ## Community Produced Documentation
 
@@ -140,79 +124,46 @@ would limit community engagement.
 
 # Proposed Strategy
 
-The proposal is for **a *Documentation Hub*:** a central one-stop-shop
-for documentation, where anyone can go and quickly find links to either
-NRI supported documentation or community produced documentation.
+The proposal is for [ACCESS-Hub]: a central one-stop-shop for documentation, where anyone can go and quickly find links to either NRI supported documentation or community produced documentation.
 
 The [ACCESS-NRI](https://access-nri.org.au) website will have an obvious
-link to the ***Documentation Hub***, but the hub will be a Git-based
-[ReadTheDocs](https://readthedocs.org) (RTD) site for a number of
-reasons:
+link to [ACCESS-Hub], but the hub will be a git-based [Material for MkDocs] + [Github Pages] site for a number of reasons:
 
 1.  More responsive to update than the website
-
 2.  Best practice versioning with git
-
-3.  Open to the community: anyone can lodge issues if there are errors
-    or updates and propose updates through pull requests
-
+3.  Open to the community: anyone can lodge issues if there are errors or updates and propose updates through pull requests
 4.  Curated by the NRI, which makes documentation visible and credible
+5.  Platform agnostic: only consists of links to existing websites, no direct hosting of community documentation
+6. [Markdown] is simple to write, lowering barrier to contributions
+7. [Github Pages] is easy, and is clearly associated with the GitHub repo where changes are made
+8. [Material for MkDocs] has an excellent built-in live search capability
 
-5.  Platform agnostic: only consists of links to existing websites, no
-    direct hosting of community documentation
+Links to documentation will be clearly sorted into NRI supported and community documentation. In addition, there will be further separation into broad categories, perhaps aligned to working groups. Entries will be annotated to indicate the nature of the material, and [Material for MkDocs] has excellent live searching which allows for discovery via the annotations.
 
-Links to documentation will be clearly sorted into supported and
-community documentation. In addition, there will be further separation
-into broad categories, perhaps aligned to working groups. Tags will be
-used to indicate the nature of the content to allow quick filtering and
-discovery, e.g. to search for jupyter notebooks, or tutorials.
+All the documentation supported by ACCESS-NRI will be created under separate sites on the main [ACCESS-NRI GitHub Organization] and linked to from the [ACCESS-Hub].
 
-All the documentation supported by the ACCESS NRI will be created under
-various RTD sites on the main [ACCESS-NRI github
-organization](https://github.com/access-nri) and linked to from the Hub.
+Community produced documentation can be hosted on any platform chosen by the community since the Hub approach has the advantage of being platform agnostic, which means it will be relatively quick to create.
 
-Community produced documentation can be hosted on any platform chosen by
-the community since the Hub approach has the advantage of being platform
-agnostic, which means it will be relatively quick to create.
+Having [ACCESS-Hub] in a GitHub repo site makes updates easy and open to the community. This aligns with agile philosophy: create a product as quickly as possible and then iterate and improve. It also scales well, with little additional overhead for adding links to more material.
 
-Having the Hub in a GitHub RTD site makes updates easy and open to the
-community. This aligns with agile philosophy: create a product as
-quickly as possible and then iterate and improve. It also scales well,
-with little additional overhead for adding links to more material.
+[ACCESS-Hub] will make gathering information for NRI supported documentation easier, which is a key objective. In some cases, large sections of existing documentation will be able to be reused, or transferred, to the NRI supported documentation.
 
-The ***Documentation Hub*** will make gathering information for NRI
-supported documentation easier, which is a key objective. In some cases,
-large sections of existing documentation will be able to be reused, or
-transferred, to the NRI supported documentation.
+One possible downside is a lack of consistency between community generated documentation, both in quality and format. However, the NRI will showcase best practices for documentation, which can be emulated.  Excellent community sourced documentation will also act as exemplars for the broader community. Included in the [ACCESS-Hub] will be instructions on how to contribute and suggestions for documentation platforms that are suitable, including software solutions for those for whom [MkDocs] would be technically challenging and present a barrier to community involvement.
 
-One possible downside is a lack of consistency between community
-generated documentation, both in quality and format. However, the NRI
-will showcase best practices for documentation, which can be emulated.
-Excellent community sourced documentation will also act as exemplars for
-the broader community. Included in the ***Documentation Hub*** will be
-instructions on how to contribute and suggestions for documentation
-platforms that are suitable, including software solutions for those for
-whom RTD would be technically challenging and present a barrier to
-community involvement.
+There may be some legacy documentation that is valuable to the community but is no longer supported or maintained and in danger of disappearing.  Depending on value, and difficulty level, it may be possible for the NRI, or the community with NRI assistance, to transition legacy documentation to an RTD site, or similar. However the NRI will explicitly have no role in on-going support.
 
-There may be some legacy documentation that is valuable to the community
-but is no longer supported or maintained and in danger of disappearing.
-Depending on value, and difficulty level, it may be possible for the
-NRI, or the community with NRI assistance, to transition legacy
-documentation to an RTD site, or similar. However the NRI will
-explicitly have no role in on-going support.
-
-As part of this strategy the NRI will create another repository,
-ACCESS-NRI-Community, where community generated or legacy documentation
-can reside. This provides a host for any community documentation that
-has no other obvious location, or if the community sees value in hosting
-their documentation in a shared space. Having a separate community
-GitHub organisation simplifies administration and permissions compared
-to hosting community resources on the main ACCESS-NRI GitHub
-organisation. It also provides a focal point for collaboration and
-community building around the ACCESS-NRI.
+As part of this strategy ACCESS-Hub will be hosted under it's own community [ACCESS-Hub GitHub Organization] where community generated or legacy documentation can also reside. This provides a host for any community documentation that has no other obvious location, or if the community sees value in hosting their documentation in a shared space. Having a separate community GitHub organisation simplifies administration and permissions compared to hosting community resources on the main [ACCESS-NRI GitHub Organization]. It also provides a focal point for collaboration and community building around the ACCESS-NRI.
 
 ## Strategy compliance
 
 Refer to the Executive Summary for a table outlining how the proposed
 strategy complies with the stated requirements.
+
+[GitHub pages]: https://pages.github.com
+[ACCESS-Hub]: https://access-hub.github.io/ACCESS-Hub/
+[MkDocs]: https://www.mkdocs.org
+[ReadTheDocs]: (https://readthedocs.org) 
+[Markdown]: https://www.markdownguide.org
+[Material for MkDocs]: https://squidfunk.github.io/mkdocs-material/
+[ACCESS-NRI GitHub Organization]: https://github.com/access-nri
+[ACCESS-Hub GitHub Organization]: https://github.com/access-hub
