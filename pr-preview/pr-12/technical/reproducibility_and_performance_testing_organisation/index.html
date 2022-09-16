@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.0">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.1">
     
     
       
@@ -431,8 +431,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nci-runners" class="md-nav__link">
-    NCI (Runners)
+  <a href="#hpc-runners" class="md-nav__link">
+    HPC (Runners)
   </a>
   
 </li>
@@ -574,8 +574,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#nci-runners" class="md-nav__link">
-    NCI (Runners)
+  <a href="#hpc-runners" class="md-nav__link">
+    HPC (Runners)
   </a>
   
 </li>
@@ -613,8 +613,7 @@
 <p>Official GitHub repositories need to be public for maximum visibility to
 the ACCESS Community. Reproducibility and performance testing will have
 to be run offsite on <a href="https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners">self-hosted runners on HPC
-hardware</a>
-at NCI.</p>
+hardware</a>.</p>
 <p>GitHub <a href="https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners#self-hosted-runner-security">recommends not using self-hosted on public
 repositories</a>:</p>
 <blockquote>
@@ -630,8 +629,8 @@ self-hosted runners on public repositories to an acceptable risk level.</p>
 <li>Threat injection into software affecting users</li>
 <li>Disruption to activities and wasted time and energy assessing damage</li>
 <li>Reputational damage</li>
-<li>Disruption/deletion of material at NCI</li>
-<li>Compromise of NCI accounts</li>
+<li>Disruption/deletion of material at HPC</li>
+<li>Compromise of HPC accounts</li>
 </ul>
 <h2 id="threat-identification">Threat Identification</h2>
 <p>As noted above the major threat vector is a pull request (PR) from a
@@ -699,7 +698,7 @@ trusted user or source that enables a major threat.</p>
 <tr>
 <td>GitHub  environment</td>
 <td>GitHub</td>
-<td>Require designated team approval for NCI CI tests</td>
+<td>Require designated team approval for HPC CI tests</td>
 </tr>
 <tr>
 <td>Reusable  workflows</td>
@@ -718,22 +717,22 @@ trusted user or source that enables a major threat.</p>
 </tr>
 <tr>
 <td>Service user</td>
-<td>NCI</td>
+<td>HPC</td>
 <td>Run jobs as service user. Reduces attack surface, severity of attack and account compromise</td>
 </tr>
 <tr>
 <td>JobFS</td>
-<td>NCI</td>
+<td>HPC</td>
 <td>Run job entirely in ephemeral JobFS space on compute nodes. Reduces possibility of harmful artefacts.</td>
 </tr>
 <tr>
 <td>Pre-run checks</td>
-<td>NCI</td>
+<td>HPC</td>
 <td>Have independent script run pre-run checks before jobs submitted.</td>
 </tr>
 <tr>
 <td>Containers</td>
-<td>NCI</td>
+<td>HPC</td>
 <td>Run entirely inside singularity containers.</td>
 </tr>
 <tr>
@@ -743,7 +742,7 @@ trusted user or source that enables a major threat.</p>
 </tr>
 <tr>
 <td>Audit</td>
-<td>NCI</td>
+<td>HPC</td>
 <td>Run post-run audit to check for anomalous   behaviour</td>
 </tr>
 </tbody>
@@ -785,7 +784,7 @@ appropriate but for code quality reasons):</p>
 <li>Less error prone</li>
 </ul>
 <p>Possibility of running CI checks for changes to GitHub workflow configuration.</p>
-<h2 id="nci-runners">NCI (Runners)</h2>
+<h2 id="hpc-runners">HPC (Runners)</h2>
 <p>Run as a service user. Reduces the potential for harmful attack and inadvertent changes to a user environment which may introduce more attack possibilities. Also reduces the damage in the case of account compromise.</p>
 <p>Run entirely in ephemeral PBS jobfs space. Reduces the potential for harmful or malicious artefacts to persist and be reused.</p>
 <p>Use <a href="https://docs.github.com/en/actions/hosting-your-own-runners/running-scripts-before-or-after-a-job">automated pre-run script</a> to make some consistency checks, e.g. job name matches allowed list.  This has the advantage of being completely independent of the repository code, and not visible to malicious actors. This also means the script needs to be kept in sync with tests, but this is a feature not a bug: can't just run new tests without some oversight. Could have a post-run script in the same way, which is an opportunity to run some security checks.</p>
@@ -856,7 +855,7 @@ appropriate but for code quality reasons):</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.48f2be22.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d691e9de.min.js"></script>
       
     
   </body>
