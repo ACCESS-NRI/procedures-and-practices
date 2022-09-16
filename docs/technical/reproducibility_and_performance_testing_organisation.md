@@ -3,8 +3,7 @@
 Official GitHub repositories need to be public for maximum visibility to
 the ACCESS Community. Reproducibility and performance testing will have
 to be run offsite on [self-hosted runners on HPC
-hardware](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners)
-at NCI.
+hardware](https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners).
 
 GitHub [recommends not using self-hosted on public
 repositories](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners#self-hosted-runner-security):
@@ -22,8 +21,8 @@ What are the major risks?
 -   Threat injection into software affecting users
 -   Disruption to activities and wasted time and energy assessing damage
 -   Reputational damage
--   Disruption/deletion of material at NCI
--   Compromise of NCI accounts
+-   Disruption/deletion of material at HPC
+-   Compromise of HPC accounts
 
 ## Threat Identification
 
@@ -51,16 +50,16 @@ trusted user or source that enables a major threat.
 |                |        | Require 2 reviews                           |
 |               |        | Only signed commits                         |
 |               |        | Do not allow bypassing branch protection settings |
-| GitHub  environment | GitHub | Require designated team approval for NCI CI tests |
+| GitHub  environment | GitHub | Require designated team approval for HPC CI tests |
 | Reusable  workflows | GitHub | Less error prone                            |
 |               |       | Cleaner                                     |
 |               |       | Isolates changes to CI in more secure repo  |
-| Service user  | NCI   | Run jobs as service user. Reduces attack surface, severity of attack and account compromise |
-| JobFS         | NCI   | Run job entirely in ephemeral JobFS space on compute nodes. Reduces possibility of harmful artefacts. |
-| Pre-run checks | NCI   | Have independent script run pre-run checks before jobs submitted. |
-| Containers    | NCI   | Run entirely inside singularity containers. |
+| Service user  | HPC   | Run jobs as service user. Reduces attack surface, severity of attack and account compromise |
+| JobFS         | HPC   | Run job entirely in ephemeral JobFS space on compute nodes. Reduces possibility of harmful artefacts. |
+| Pre-run checks | HPC   | Have independent script run pre-run checks before jobs submitted. |
+| Containers    | HPC   | Run entirely inside singularity containers. |
 |               |       | Massively reduce attack surface with read-only mounts |
-| Audit         | NCI   | Run post-run audit to check for anomalous   behaviour
+| Audit         | HPC   | Run post-run audit to check for anomalous   behaviour
 
 Apply the [principle of least
 privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege).
@@ -117,7 +116,7 @@ Reusable workflows are workflow yaml files that can be reused in repositories. S
 
 Possibility of running CI checks for changes to GitHub workflow configuration.
 
-## NCI (Runners)
+## HPC (Runners)
 
 Run as a service user. Reduces the potential for harmful attack and inadvertent changes to a user environment which may introduce more attack possibilities. Also reduces the damage in the case of account compromise.
 
