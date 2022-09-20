@@ -1,0 +1,803 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.2">
+    
+    
+      
+        <title>Documentation Platform - Procedures and Practices</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9f9400aa.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="light" data-md-color-primary="indigo" data-md-color-accent="lime">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#executive-summary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Procedures and Practices" class="md-header__button md-logo" aria-label="Procedures and Practices" data-md-component="logo">
+      
+  <img src="../../assets/ACCESSLogoJustPlanet.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Procedures and Practices
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentation Platform
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="indigo" data-md-color-accent="lime"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ACCESS-NRI/Procedures-and-Practices" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Procedures and Practices
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Welcome
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../code_and_workflow_platform_strategy/" class="md-tabs__link md-tabs__link--active">
+        Technical
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../release/release_specification.md" class="md-tabs__link">
+        Release Management
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Procedures and Practices" class="md-nav__button md-logo" aria-label="Procedures and Practices" data-md-component="logo">
+      
+  <img src="../../assets/ACCESSLogoJustPlanet.png" alt="logo">
+
+    </a>
+    Procedures and Practices
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ACCESS-NRI/Procedures-and-Practices" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Procedures and Practices
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Technical
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Technical" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Technical
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_and_workflow_platform_strategy/" class="md-nav__link">
+        Code and Workflow Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Documentation Platform
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../forum_and_discussion_platform.md" class="md-nav__link">
+        Forum and Discussion Platform
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reproducibility_and_performance_testing_organisation/" class="md-nav__link">
+        Reproducibility and Performance Testing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Release Management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Release Management" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Release Management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release/release_specification.md" class="md-nav__link">
+        Release Specification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release/licensing.md" class="md-nav__link">
+        Licensing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/ACCESS-NRI/Procedures-and-Practices/edit/main/docs/technical/documentation_platform_strategy.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="executive-summary">Executive Summary</h1>
+<p>We are proposing to put in place a Documentation Hub, <a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a>, powered by <a href="https://www.mkdocs.org">MkDocs</a>. <a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a> will provide links to the documentation supported by the ACCESS NRI and any documentation the ACCESS community deems useful. It will group and clearly identify which documentation is supported by the ACCESS NRI and that supported by the community.</p>
+<p>The technical documentation supported by the ACCESS NRI will either use <a href="(https://readthedocs.org)">ReadTheDocs</a> (RTD) or <a href="https://www.mkdocs.org">MkDocs</a> + <a href="https://pages.github.com">GitHub pages</a>. <a href="(https://readthedocs.org)">ReadTheDocs</a> is preferred for automated API documentation, or strict versioning is required. <a href="https://www.mkdocs.org">MkDocs</a> is preferred when the barrier to contribution needs to be as low as possible. Other documentation will make use of other tools and platforms as appropriate for the type of communication (e.g. Jupyter Notebooks and Books, YouTube, etc.).</p>
+<p>See below for a summary of how the proposed strategy complies with the identified requirements</p>
+<table>
+<thead>
+<tr>
+<th><strong>Criteria</strong></th>
+<th><strong>Compliance</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Limit the number of platforms for supported documentation</td>
+<td>MkDocs + GitHub pages and RTD</td>
+</tr>
+<tr>
+<td>Clear delineation between NRI curated and community-led organisation</td>
+<td>Separate community GitHub documentation</td>
+</tr>
+<tr>
+<td></td>
+<td>Clear separation of supported and community docs on <a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a></td>
+</tr>
+<tr>
+<td>Documentation contained within a model code repository</td>
+<td>Docs in model repo where possible subject to licensing</td>
+</tr>
+<tr>
+<td>Contributions from a wide range  of people: NRI staff and the community experts</td>
+<td>Publicly visible git repository allows input via issues and pull request</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a> conduit for community  contributions</td>
+</tr>
+<tr>
+<td>Support of code snippets</td>
+<td>Code snippets supported by all plaforms</td>
+</tr>
+<tr>
+<td>Standalone documentation with its own versioning if required</td>
+<td>RTD versioning is tempo customisable</td>
+</tr>
+<tr>
+<td>Support a limited range of formats for NRI supported  documentation</td>
+<td>Sphinx very widely used.  Other systems can generate  compatible docs if required e.g. jupyterbook. Otherwise default to <a href="https://www.markdownguide.org">Markdown</a></td>
+</tr>
+<tr>
+<td>Ease of use by the community</td>
+<td>GitHub issues and pull requests are well known and currently used in community</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.markdownguide.org">Markdown</a> is a simple and easy to use markup language that is very widely used. e.g. GitHub</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a> can  link to documentation in any  form. So documentation software systems with lower barrier of entry can be used if necessary</td>
+</tr>
+</tbody>
+</table>
+<h1 id="introduction">Introduction</h1>
+<p>ACCESS-NRI (NRI) has a requirement to provide documentation to the
+community as a component of release packages. Some of that documentation
+will need to be sourced from the community, who are the domain
+specialists.</p>
+<p>The NRI can also play a very important role by providing a common
+location for other related documentation generated by the community.</p>
+<p>There needs to be a clear distinction between documentation supported by
+the NRI, and other documentation that is not supported but is recognised
+to be of value to the community.</p>
+<h1 id="requirements-for-the-documentation">Requirements for the Documentation</h1>
+<h2 id="nri-supported-documentation">NRI Supported Documentation</h2>
+<p>All release packages require extensive documentation. This documentation
+can be broken down into two broad groups:</p>
+<ol>
+<li>
+<p><strong>User focused</strong> <strong>documentation:</strong> describes how to use items in
+    the release package, such as running models or analysing model
+    output data. This category includes any documentation produced for
+    training purposes. As such it can use a wide range of formats to
+    support different types of communication (e.g. code-based, video,
+    text).</p>
+</li>
+<li>
+<p><strong>Technical documentation:</strong> describes technical detail that is of
+    interest to a narrow audience with specialist knowledge. This can be
+    further subdivided into</p>
+<ol>
+<li>Versioned documentation that resides in the same repository as
+   model component code, and is updated in lock-step to reflect
+   changes to the code</li>
+<li>Other technical documentation that is less closely tied to
+   rapidly varying and versioned codebases, e.g. documentation
+   relating to the generation of input data such as bathymetry</li>
+<li>More general documentation such as policies and practices </li>
+</ol>
+</li>
+</ol>
+<p>It is important that versioned technical documentation is identifiable
+by version, so that it is straightforward to find the technical
+documentation that relates to an exact version of a model. This also
+ensures versioned technical documentation does not become stale or out
+of date as can happen if a single documentation source is used to cover
+all model versions.</p>
+<p>Other technical documentation exists on an update cycle that is not
+necessarily strictly tied to code changes. Such as example python
+notebooks and general How-To guides. These items will need to be
+periodically updated and will have their own versioning tempo to
+facilitate updates and backwards compatibility, but it is unlikely to
+change with the same rapidity. This documentation may only need to be
+revised with major model or configuration updates and may share some of
+the same version <em>numbers</em> as models or configurations to which it is
+closely aligned but will likely have many fewer total versions. This
+makes it easier for users to ensure they are using the correct version
+of the documentation.</p>
+<p>More general documentation does not require formal versioning.</p>
+<p>It is essential that the community can easily provide feedback on the documentation and propose changes. Current documentation work by the NRI must also be clearly visible to the community.</p>
+<p>Versioned technical documentation will be the industry standard <a href="https://readthedocs.org">ReadTheDocs</a>, otherwise <a href="https://www.mkdocs.org">MkDocs</a> + <a href="https://pages.github.com">Github Pages</a> as this is simple and easy to use, lowering the barrier for community input. This means all documentation supported by the NRI will be hosted in public git repositories, either within a model component repository or a standalone documentation repository. It will allow the community and the NRI to communicate on the state of the documentation through the same issue process as for the model development work.</p>
+<h2 id="community-produced-documentation">Community Produced Documentation</h2>
+<p>There is immense value to the broader community to have a single curated
+location for documentation beyond what is provided and supported by the
+NRI. There is also value to the NRI, as a source of information from the
+community, who are domain specialists.</p>
+<p>Much of the community produced documentation exists in many different
+formats, on a variety of platforms, such as wikis and legacy websites,
+that do not have a guaranteed long-term future. Documentation that has
+value for the community will need to be migrated to a stable platform.</p>
+<p>The NRI needs a solution that provides clear delineation between NRI
+released and supported documentation, and community produced
+documentation that the NRI has neither the remit nor resources to
+actively support. We also need a solution that does not impose an undue
+burden on community members that do not have the time to spare, as this
+would limit community engagement.</p>
+<h2 id="requirements-summary">Requirements summary</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Category</strong></th>
+<th><strong>Requirements</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General requirements</td>
+<td>Limit the number of platforms (ideally 1).</td>
+</tr>
+<tr>
+<td></td>
+<td>Clear delineation between NRI curated and community-led documentation.</td>
+</tr>
+<tr>
+<td>Technical documentation --  versioning in lock-step with model</td>
+<td>Documentation contained within a model code repository model</td>
+</tr>
+<tr>
+<td></td>
+<td>Contributions from a wide range of people: NRI staff and the community experts</td>
+</tr>
+<tr>
+<td></td>
+<td>Support of code snippets</td>
+</tr>
+<tr>
+<td>Technical documentation -- with  own versioning</td>
+<td>Standalone documentation with its own versioning tempo</td>
+</tr>
+<tr>
+<td></td>
+<td>Support a limited range of formats</td>
+</tr>
+<tr>
+<td></td>
+<td>Contributions from a wide range  of people: NRI staff and the community experts</td>
+</tr>
+<tr>
+<td>User focused documentation</td>
+<td>Standalone documentation with its own versioning tempo</td>
+</tr>
+<tr>
+<td></td>
+<td>Support a limited range of formats</td>
+</tr>
+<tr>
+<td></td>
+<td>Contributions from a wide range  of people: NRI staff and the  community experts</td>
+</tr>
+<tr>
+<td>Community-led documentation</td>
+<td>Ease of use by the community</td>
+</tr>
+<tr>
+<td></td>
+<td>Support a wide variety of formats</td>
+</tr>
+</tbody>
+</table>
+<h1 id="proposed-strategy">Proposed Strategy</h1>
+<p>The proposal is for <a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a>: a central one-stop-shop for documentation, where anyone can go and quickly find links to either NRI supported documentation or community produced documentation.</p>
+<p>The <a href="https://access-nri.org.au">ACCESS-NRI</a> website will have an obvious
+link to <a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a>, but the hub will be a git-based <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> + <a href="https://pages.github.com">Github Pages</a> site for a number of reasons:</p>
+<ol>
+<li>More responsive to update than the website</li>
+<li>Best practice versioning with git</li>
+<li>Open to the community: anyone can lodge issues if there are errors or updates and propose updates through pull requests</li>
+<li>Curated by the NRI, which makes documentation visible and credible</li>
+<li>Platform agnostic: only consists of links to existing websites, no direct hosting of community documentation</li>
+<li><a href="https://www.markdownguide.org">Markdown</a> is simple to write, lowering barrier to contributions</li>
+<li><a href="https://pages.github.com">Github Pages</a> is easy, and is clearly associated with the GitHub repo where changes are made</li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> has an excellent built-in live search capability</li>
+</ol>
+<p>Links to documentation will be clearly sorted into NRI supported and community documentation. In addition, there will be further separation into broad categories, perhaps aligned to working groups. Entries will be annotated to indicate the nature of the material, and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> has excellent live searching which allows for discovery via the annotations.</p>
+<p>All the documentation supported by ACCESS-NRI will be created under separate sites on the main <a href="https://github.com/access-nri">ACCESS-NRI GitHub Organization</a> and linked to from the <a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a>.</p>
+<p>Community produced documentation can be hosted on any platform chosen by the community since the Hub approach has the advantage of being platform agnostic, which means it will be relatively quick to create.</p>
+<p>Having <a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a> in a GitHub repo site makes updates easy and open to the community. This aligns with agile philosophy: create a product as quickly as possible and then iterate and improve. It also scales well, with little additional overhead for adding links to more material.</p>
+<p><a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a> will make gathering information for NRI supported documentation easier, which is a key objective. In some cases, large sections of existing documentation will be able to be reused, or transferred, to the NRI supported documentation.</p>
+<p>One possible downside is a lack of consistency between community generated documentation, both in quality and format. However, the NRI will showcase best practices for documentation, which can be emulated.  Excellent community sourced documentation will also act as exemplars for the broader community. Included in the <a href="https://access-hub.github.io/ACCESS-Hub/">ACCESS-Hub</a> will be instructions on how to contribute and suggestions for documentation platforms that are suitable, including software solutions for those for whom <a href="https://www.mkdocs.org">MkDocs</a> would be technically challenging and present a barrier to community involvement.</p>
+<p>There may be some legacy documentation that is valuable to the community but is no longer supported or maintained and in danger of disappearing.  Depending on value, and difficulty level, it may be possible for the NRI, or the community with NRI assistance, to transition legacy documentation to an RTD site, or similar. However the NRI will explicitly have no role in on-going support.</p>
+<p>As part of this strategy ACCESS-Hub will be hosted under it's own community <a href="https://github.com/access-hub">ACCESS-Hub GitHub Organization</a> where community generated or legacy documentation can also reside. This provides a host for any community documentation that has no other obvious location, or if the community sees value in hosting their documentation in a shared space. Having a separate community GitHub organisation simplifies administration and permissions compared to hosting community resources on the main <a href="https://github.com/access-nri">ACCESS-NRI GitHub Organization</a>. It also provides a focal point for collaboration and community building around the ACCESS-NRI.</p>
+<h2 id="strategy-compliance">Strategy compliance</h2>
+<p>Refer to the Executive Summary for a table outlining how the proposed
+strategy complies with the stated requirements.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../code_and_workflow_platform_strategy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Code and Workflow Management" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Code and Workflow Management
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../reproducibility_and_performance_testing_organisation/" class="md-footer__link md-footer__link--next" aria-label="Next: Reproducibility and Performance Testing" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Reproducibility and Performance Testing
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.39f04ddb.min.js"></script>
+      
+    
+  </body>
+</html>
