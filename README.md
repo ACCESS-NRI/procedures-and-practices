@@ -1,6 +1,8 @@
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 # Procedures and Practices
+[![ACCESS p&p](docs/assets/badge.svg)](https://access-nri.github.io/procedures-and-practices)
+
 
 The documents in this repository describe what we do and how we do it, what the community can expect and and how to participate.
 
