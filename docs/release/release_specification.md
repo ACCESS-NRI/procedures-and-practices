@@ -23,15 +23,12 @@ See below for details on the different elements of a release package
 Each model configuration contains
 
 -   A number of model components and coupling components
-
 -   Technical documentation describing how the model components and coupling components are combined into a model
 
 Each component contains
 
 -   Source code
-
 -   Technical documentation of the model
-
 -   Input (ancillary) files required to run the model, e.g. topography, vegetation types, initial conditions
 
 All source code and documentation will be publicly available and released as open source where licensing permits.
@@ -39,15 +36,12 @@ All source code and documentation will be publicly available and released as ope
 Attributes of a model:
 
 -   Version controlled software
-
 -   Reproducible build with full build provenance
-
 ## 
 
 All input files will:
 
 -   Meet FAIR standards
-
 -   Where applicable code to recreate the data will be well documented, open source and publicly available
 
 ## Experiment
@@ -55,32 +49,19 @@ All input files will:
 An experiment is a specific realisation of a model configuration supported by the NRI. It has the following attributes:
 
 -   Available to the community, publicly available and open source where licensing allows
-
 -   Versioned
-
 -   Reproducible
-
 -   Supported on NCI hardware
-
 -   Clearly articulated support timeline
-
 -   Restart and output data products available to the community
-
 -   Data products meet FAIR standards
-
 -   Includes documentation:
-
     -   characterising model (as described in previous section)
-
     -   instructions on how to run the model
-
     -   description of how the model was run *for this experiment*
-
     -   instructions for accessing data products and example analyses
 
 The NRI will commit to a support timeline for each experiment. The details of that support timeline will vary depending on community needs.
-
-## 
 
 ## What does support entail?
 
@@ -127,8 +108,6 @@ Once maintenance support lapses the experiment and its documentation and data pr
 Once archived data products will not be readily accessible. If access is required a request will have to be made to retrieve the data from tape archive. The merits of the request will be assessed, along with the size and complexity of the retrieval process, and a decision made if the request will be granted. Archival support is not indefinite. There is a limit to archive support after which time the data *may* be deleted, or more likely not migrated when archive hardware is update.
 
 Bugs or errors can be reported via an issue in the appropriate repository in the [ACCESS-NRI GitHub organisation].
-
-## 
 
 ## Indicative support timelines
 
